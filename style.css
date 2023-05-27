@@ -1,0 +1,426 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+header{
+	position: relative;
+	background-image: url(img/chineas.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+}
+.header-icon{
+	margin-top: 17px;
+	max-width: 63px;
+}
+.container{
+	margin: 0px 119px 0px 119px;
+}
+.header-line{
+	display: flex;
+	justify-content: space-between;
+}
+.header-menu{
+	margin-top: 42px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 33px;
+	text-align: center;
+}
+.menu-item{
+	color: #fff;
+	margin: 0px 29px 0px 0px;
+}
+.order{
+	margin-top: 33px;
+}
+.order-button{
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 49px;
+
+color: #FFFFFF;
+}
+.header-line:before{
+ 	display: block;
+	align-items: center;
+	position: absolute;
+	content: '';
+	height: 1px;
+	width: 83.35%;
+	background-color: #ffff;
+	top: 110px;
+}
+.head-desc-itm:not(:last-child){
+	margin-right: 50px ;
+}
+.head-tittle{
+	padding-top: 110px;
+	font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 90px;
+line-height: 125px;
+
+color: #FFFFFF;
+
+}
+.head-desc{
+	position: relative;
+	margin-top: 45px;
+	display: flex;
+	align-items: left;
+	z-index: 99;
+
+}
+.head-image{
+	max-width: 76px;
+}
+.head-desc-sub{
+	margin-top: 103px;
+	font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+
+color: #FFFFFF;
+}
+.head-desc-dit{
+	margin-top: 25px;
+	font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+main{
+	padding-top: 300px;
+	position:relative;
+	margin-top:-150px ;
+	 background-image: url(img/gradient.png);
+ 	background-size: contain;
+ 	height: 150vh;
+ 	padding-bottom: 300px;
+
+ 
+ max-width: 100%;
+}
+.main-tittle{
+	text-align: center;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 87px;
+
+color: #FFFFFF;
+
+}
+.main-card{
+	position: relative;
+	max-width: 266px;
+	height: 404px;
+	border-radius: 13px;
+
+
+}
+
+.card-img{
+	max-width: 266px;
+	height: 404px;
+	border-radius: 13px;
+	top: 0px;
+	
+}
+.img-grad1{
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+	max-width: 266px;
+	height: 404px;
+}
+/*===*/
+.img-grad1:after{
+	top: 0;    
+	left: 0;  
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	display: inline-block;
+	content: "";
+	padding-top: 270px;
+	opacity: 0;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 54px;
+	text-align: center;
+	vertical-align: bottom;
+	color: #FFFFFF;
+	border-radius: 13px;
+	transition: opacity  ease-in-out;
+}
+.img-grad1:hover:after{
+	content: "ТУР №1";
+	display: inline-block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to bottom, #0000, #000000); 
+	opacity: 1.0;
+	transition: 0.5s;
+}
+.img-grad1:before{
+	top: 0;    
+	left: 0;  
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	display: inline-block;
+	font-family: 'Open Sans';
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 33px;
+	color: #FFFFFF;
+	content: "";
+	padding-top: 330px;
+	opacity: 0;
+	transition: opacity  ease-in-out;
+}
+.img-grad1:hover:before{
+	content:"Знайди всі таємниці";
+	
+	display: inline-block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	opacity: 1.0;
+	transition: 0.5s;
+	z-index: 101;
+}
+.img-grad1:hover .card-text{
+	display: block;
+	z-index: 101;
+}
+/*---*/
+.img-grad2{
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+	max-width: 266px;
+	height: 404px;
+}
+/*===*/
+.img-grad2:after{
+	top: 0;    
+	left: 0;  
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	display: inline-block;
+	content: "";
+	padding-top: 270px;
+	opacity: 0;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 54px;
+	text-align: center;
+	vertical-align: bottom;
+	color: #FFFFFF;
+	border-radius: 13px;
+	transition: opacity  ease-in-out;
+}
+.img-grad2:hover:after{
+	content: "ТУР №2";
+	display: inline-block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to bottom, #0000, #000000); 
+	opacity: 1.0;
+	transition: 0.5s;
+}
+.img-grad2:before{
+	top: 0;    
+	left: 0;  
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	display: inline-block;
+	font-family: 'Open Sans';
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 33px;
+	color: #FFFFFF;
+	content: "";
+	padding-top: 330px;
+	opacity: 0;
+	transition: opacity  ease-in-out;
+}
+.img-grad2:hover:before{
+	content:"Знайди всі таємниці";
+	
+	display: inline-block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	opacity: 1.0;
+	transition: 0.5s;
+	z-index: 101;
+}
+.img-grad2:hover .card-text{
+	display: block;
+	z-index: 101;
+}
+
+
+.main-cards{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+
+}
+/*---*/
+.img-grad3{
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+	max-width: 266px;
+	height: 404px;
+}
+/*===*/
+.img-grad3:after{
+	top: 0;    
+	left: 0;  
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	display: inline-block;
+	content: "";
+	padding-top: 270px;
+	opacity: 0;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 54px;
+	text-align: center;
+	vertical-align: bottom;
+	color: #FFFFFF;
+	border-radius: 13px;
+	transition: opacity  ease-in-out;
+}
+.img-grad3:hover:after{
+	content: "ТУР №3";
+	display: inline-block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to bottom, #0000, #000000); 
+	opacity: 1.0;
+	transition: 0.5s;
+}
+.img-grad3:before{
+	top: 0;    
+	left: 0;  
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	display: inline-block;
+	font-family: 'Open Sans';
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 33px;
+	color: #FFFFFF;
+	content: "";
+	padding-top: 330px;
+	opacity: 0;
+	transition: opacity  ease-in-out;
+}
+.img-grad3:hover:before{
+	content:"Знайди всі таємниці";
+	
+	display: inline-block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	opacity: 1.0;
+	transition: 0.5s;
+	z-index: 101;
+}
+
+footer{
+	margin-top: -150px;
+	background-image: url(img/plain-sky.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+}

@@ -1,0 +1,74 @@
+.img-grad:after{
+	content: "";
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+.img-grad:hover:after{
+	display: block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to bottom, #0004, #000000); 
+	opacity: 0.8;
+	border-radius: 13px;
+}
+.img-grad:before{
+	content: "";
+	opacity: 0;    
+	transition: opacity 0.5s;
+}
+.img-grad:hover:before{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	margin: -26px 0 0 -26px; 
+	position: absolute;
+	top: 50%;
+	left: 50%;    
+	z-index: 100;    
+	opacity: 1;
+}
+.img-grad:hover .card-text{
+	display: block;
+	z-index: 101;
+}
+
+
+
+
+<div class="card-text">
+							<div class="card-name">ТУР № 1</div>
+							<div class="card-desc">Знайди всі таємниці</div>
+					</div>
+
+
+
+					
+					.img-grad:before{
+	content: "Знайди всі таємниці";
+	font-family: 'Open Sans';
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 33px;
+	color: #FFFFFF;
+	opacity: 0;    
+	transition: opacity;
+	width: 100%;
+}
+.img-grad:hover:before{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	margin: -26px 0 0 -26px; 
+	position: absolute;
+	top: 0;
+	left: 0;    
+	z-index: 100;    
+	opacity: 1;
+	transition: 0.3s;
+}
